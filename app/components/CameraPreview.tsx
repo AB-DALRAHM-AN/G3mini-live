@@ -216,7 +216,7 @@ export default function CameraPreview({ onTranscription }: CameraPreviewProps) {
           }
           setIsAudioSetup(false);
         };
-      } catch (error) {
+      } catch {
         if (isActive) {
           cleanupAudio();
           setIsAudioSetup(false);
